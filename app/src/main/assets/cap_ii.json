@@ -1,0 +1,426 @@
+{
+  "titulo": "CAP_II",
+  "tiempo": 30,
+  "preguntas": [
+    {
+      "texto": "¿Cuál es el enfoque clásico de la gestión de proyectos de desarrollo de software, especialmente grandes proyectos?",
+      "opciones": [
+        {
+          "texto": "Ágil",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Cascada",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Codificar y corregir",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Iterativo evolutiva",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Una prueba de regresión implica:",
+      "opciones": [
+        {
+          "texto": "Siempre una prueba automática",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Probar lo que no se cambió pero que se puede haber visto afectado por el cambio",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Volver a probar lo que se cambió para asegurarnos de que se corrigió el defecto",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ninguna",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Seleccione la alternativa correcta:",
+      "opciones": [
+        {
+          "texto": "Durante las pruebas de componentes, los probadores deben centrarse en encontrar defectos en los componentes del sistema",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Durante las pruebas de componentes, los probadores deben centrarse en los defectos en el sistema",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Durante las pruebas de sistema, los probadores deben centrarse en los defectos en otras interfaces de los elementos que forman el sistema",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Durante las pruebas de integración, los probadores deben centrarse en los defectos del sistema",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Prueba de integración:",
+      "opciones": [
+        {
+          "texto": "Implica que los probadores deben buscar distintos tipos de errores en todo el sistema, totalmente integrado",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Implica que los probadores deben buscar errores en los componentes del sistema bajo prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Implica que los probadores deben buscar errores en las relaciones y las interfaces entre los componentes del sistema bajo prueba",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Implica que los probadores deben hacer pruebas no funcionales",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Pruebas de aceptación son:",
+      "opciones": [
+        {
+          "texto": "La validación basada en la funcionalidad de los requisitos",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Comprobar si el software es lo suficientemente estable como para ser probado",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas de usabilidad de las interfaces de los sistemas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas de accesibilidad del sistema",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "En el modelo en V, ¿qué nivel de pruebas se debería empezar a probar primero?",
+      "opciones": [
+        {
+          "texto": "Pruebas de aceptación",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Pruebas de sistema",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Pruebas de integración",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Pruebas unitarias",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "Usted está realizando una prueba de seguridad con el objetivo de encontrar vulnerabilidades de un sistema. ¿Cuál de las siguientes afirmaciones describe esta prueba?",
+      "opciones": [
+        {
+          "texto": "Una prueba funcional durante el nivel de prueba de integración",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una prueba no funcional durante el nivel de prueba de integración",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una prueba funcional durante el nivel de prueba de sistema",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una prueba no funcional durante el nivel de prueba de sistema",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes afirmaciones es falsa?",
+      "opciones": [
+        {
+          "texto": "Una prueba funcional durante el nivel de prueba de integración",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una prueba no funcional durante el nivel de prueba de integración",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una prueba funcional durante el nivel de prueba de sistema",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una prueba no funcional no se puede realizar durante el nivel de prueba de sistema",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de los siguientes requerimientos podrían ser probados por un sistema de pruebas funcional?",
+      "opciones": [
+        {
+          "texto": "El sistema debería ser capaz de desempeñar sus funciones durante un promedio de 23 horas y 50 minutos por día",
+          "esCorrecta": false
+        },
+        {
+          "texto": "El sistema debería cumplir adecuadamente con capacidad para 30 usuarios",
+          "esCorrecta": false
+        },
+        {
+          "texto": "El sistema debería permitir al usuario modificar la dirección de un cliente",
+          "esCorrecta": true
+        },
+        {
+          "texto": "El sistema debería permitir crear 12 000 nuevos clientes por año",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes es una característica de buenas prácticas de pruebas en algún modelo de ciclo de vida?",
+      "opciones": [
+        {
+          "texto": "Todas las revisiones de documentos involucran siempre al equipo de desarrollo",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Se tienen objetivos de pruebas específicos en cada nivel de prueba",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Análisis y diseño de pruebas comienza tan pronto como el desarrollo ha finalizado",
+          "esCorrecta": false
+        },
+        {
+          "texto": "No se realizan pruebas",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de los siguientes define PRINCIPALMENTE el alcance de las pruebas de mantenimiento?",
+      "opciones": [
+        {
+          "texto": "La cobertura del paquete de regresión actual",
+          "esCorrecta": false
+        },
+        {
+          "texto": "El tamaño y riesgo de algún cambio en el sistema",
+          "esCorrecta": true
+        },
+        {
+          "texto": "El tiempo transcurrido desde que fue hecho el último cambio del sistema",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Defectos encontrados en las últimas pruebas de regresión",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es considerado un activador para el mantenimiento?",
+      "opciones": [
+        {
+          "texto": "Modificaciones tales como mejoras planificadas, cambios correctivos y de emergencia",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Migración, por ejemplo, de una plataforma a otra",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Retirada, por ejemplo, cuando una aplicación llega al final de su vida útil",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Todas las anteriores",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "Desarrollo Guiado por el Comportamiento (BDD):",
+      "opciones": [
+        {
+          "texto": "Expresa el comportamiento deseado con pruebas en lenguaje natural usando el formato Dado/Cuándo/Entonces",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Las pruebas se escriben primero, luego el código y luego se refactorizan",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ninguna",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Todas las anteriores",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "TDD (Desarrollo Guiado por Pruebas):",
+      "opciones": [
+        {
+          "texto": "Expresa el comportamiento deseado usando el formato Dado/Cuándo/Entonces",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas se escriben primero, luego el código se escribe y luego las pruebas y el código se refactorizan",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Ninguna",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Todas las anteriores",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes afirmaciones sobre DevOps es CORRECTA?",
+      "opciones": [
+        {
+          "texto": "Se utiliza la integración continua para enviar código rápidamente sin completar pruebas de componentes",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Se requieren muchas pruebas de regresión automatizadas para reducir el riesgo de regresión",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Los probadores dedicarán más esfuerzos para publicar las pruebas por operaciones",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas deben automatizarse completamente sin pruebas manuales",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cómo se define el enfoque de \"shift-left\" en las pruebas?",
+      "opciones": [
+        {
+          "texto": "Realizando pruebas al final del ciclo de vida",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Realizando pruebas temprano en el ciclo de vida del desarrollo de software",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Realizando pruebas de aceptación únicamente",
+          "esCorrecta": false
+        },
+        {
+          "texto": "No realizando pruebas hasta que el código esté implementado",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Qué tipo de pruebas evalúa las funciones que un componente o sistema debe realizar?",
+      "opciones": [
+        {
+          "texto": "Pruebas no funcionales",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Pruebas de aceptación",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Pruebas de caja negra",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Pruebas funcionales",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es un beneficio típico de las retrospectivas?",
+      "opciones": [
+        {
+          "texto": "Aumento de la cantidad del código",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Mejora del trabajo en equipo y el aprendizaje",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Reducción de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Disminución de la necesidad de pruebas de mantenimiento",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Qué tipo de pruebas se derivan de la documentación externa al objeto de prueba?",
+      "opciones": [
+        {
+          "texto": "Pruebas de caja negra",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Pruebas de componente",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Pruebas de caja blanca",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Pruebas de sentencia",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es un objetivo principal de las pruebas de aceptación?",
+      "opciones": [
+        {
+          "texto": "Validar la funcionalidad interna de los componentes del sistema",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Evaluar la calidad del código fuente",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Demostrar que el sistema cumple con los requisitos del usuario",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Probar la interacción entre diferentes componentes del sistema",
+          "esCorrecta": false
+        }
+      ]
+    }
+  ]
+}

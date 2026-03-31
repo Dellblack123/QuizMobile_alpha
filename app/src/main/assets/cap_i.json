@@ -1,0 +1,636 @@
+{
+  "titulo": "Cap I",
+  "tiempo": 90,
+  "preguntas": [
+    {
+      "texto": "Seleccione la mejor definición de una causa raiz:",
+      "opciones": [
+        {
+          "texto": "Requiere la ejecución del Software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Componente o Sistema sometido a pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Condiciones tempranas que contribuyen a la creación de defectos",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Ganar la confianza en el nivel de calidad",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Es un producto de trabajo de las pruebas:",
+      "opciones": [
+        {
+          "texto": "Plan de Pruebas",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Componente o Sistema sometido a pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Requerimientos, diagramas, diseño, historias de usuario",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ganar la confianza en el nivel de calidad",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Seleccione el objeto de pruebas:",
+      "opciones": [
+        {
+          "texto": "Plan de Pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Componente o Sistema sometido a pruebas",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Requerimientos, diagramas, diseño, historias de usuario",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ganar la confianza en el nivel de calidad",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Se conoce como base de pruebas:",
+      "opciones": [
+        {
+          "texto": "Plan de Pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Componente o Sistema sometido a pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Requerimientos, diagramas, diseño, historias de usuario",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Ganar la confianza en el nivel de calidad",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Una prueba dinámica:",
+      "opciones": [
+        {
+          "texto": "Plan de Pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Componente o Sistema sometido a pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Requiere la ejecución del Software",
+          "esCorrecta": true
+        },
+        {
+          "texto": "No requiere la ejecución del software",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Una prueba estática:",
+      "opciones": [
+        {
+          "texto": "Plan de Pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Componente o Sistema sometido a pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Requiere la ejecución del Software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "No requiere la ejecución del software",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "Es una tarea de la Planificación de Pruebas:",
+      "opciones": [
+        {
+          "texto": "Identificar Condiciones de Prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Archivar los productos de trabajo de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Identificar los objetivos de las pruebas",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Diseñar Casos de Prueba",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Es una tarea del Seguimiento y Control de Pruebas:",
+      "opciones": [
+        {
+          "texto": "Identificar Condiciones de Prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Archivar los productos de trabajo de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Identificar los objetivos de las pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Se compara lo planificado versus lo real y se toman medidas correctivas",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "Es una tarea del Análisis de Pruebas:",
+      "opciones": [
+        {
+          "texto": "Identificar Condiciones de Prueba",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Archivar los productos de trabajo de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Identificar los objetivos de las pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Se compara lo planificado versus lo real y se toman medidas correctivas",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Es una tarea del Diseño de Pruebas:",
+      "opciones": [
+        {
+          "texto": "Diseñar Casos de Prueba",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Archivar los productos de trabajo de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Asegurar que el ambiente de pruebas está disponible",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Elaborar informes de incidentes",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Es una tarea de la Implementación de Pruebas:",
+      "opciones": [
+        {
+          "texto": "Diseñar Casos de Prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Archivar los productos de trabajo de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Asegurar que el ambiente de pruebas está disponible",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Elaborar informes de incidentes",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Es una tarea de la Ejecución de Pruebas:",
+      "opciones": [
+        {
+          "texto": "Diseñar Casos de Prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Archivar los productos de trabajo de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Asegurar que el ambiente de pruebas está disponible",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Elaborar informes de incidentes",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "Es una tarea de la Finalización de Pruebas:",
+      "opciones": [
+        {
+          "texto": "Diseñar Casos de Prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Archivar los productos de trabajo de pruebas",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Diseñar Casos de Prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Elaborar informes de incidentes",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes afirmaciones sobre aseguramiento de calidad (QA) y/o control de calidad (QC) es correcta?",
+      "opciones": [
+        {
+          "texto": "El control de calidad se realiza como parte de las pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La prueba se realiza como parte del control de calidad",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Pruebas es otro término para el control de calidad",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas se realizan como parte del aseguramiento de la calidad",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Cuál es una tarea importante de la implementación de pruebas:",
+      "opciones": [
+        {
+          "texto": "Desarrollar y dar prioridad a los casos de prueba, creación de datos de prueba, escribir procedimientos de prueba, preparación de la armadura de pruebas y escribir scripts automatizados",
+          "esCorrecta": true
+        },
+        {
+          "texto": "El registro de resultados de ejecución de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Identificar condiciones de prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Diseñar casos de prueba",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Seleccione la alternativa correcta:",
+      "opciones": [
+        {
+          "texto": "Las pruebas buscan situaciones en las que un producto no cumple con las expectativas de los desarrolladores",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas buscan situaciones en las que un producto no cumple con las expectativas de los usuarios finales o clientes",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Las pruebas no buscan situaciones en las que un producto no cumple con las expectativas de los desarrolladores",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas no buscan situaciones en las que un producto no cumple con las expectativas de los desarrolladores",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Seleccione uno de los principios generales de las pruebas:",
+      "opciones": [
+        {
+          "texto": "Las pruebas muestran la presencia de defectos",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Las pruebas exhaustivas son recomendables",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las herramientas de automatización pueden ser una estrategia de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas deben comenzar en las etapas finales del desarrollo",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Seleccione la afirmación correcta:",
+      "opciones": [
+        {
+          "texto": "La fiabilidad del producto no será mejor si la prueba es realizada por una agencia independiente",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La fiabilidad del producto será mejor si la prueba es realizada por una agencia independiente",
+          "esCorrecta": true
+        },
+        {
+          "texto": "La fiabilidad del producto será mejor si es que no se realizan pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La fiabilidad del producto no podrá ser evaluada por la pruebas",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es la mejor definición del Sesgo de Confirmación?",
+      "opciones": [
+        {
+          "texto": "Elemento de la psicología humana que dificulta la aceptación de información que difiera de sus creencias actuales",
+          "esCorrecta": true
+        },
+        {
+          "texto": "La posibilidad de hacer pruebas independientes",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Elemento de la psicología humana que dificulta la aceptación de información nueva",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Se presenta en los probadores experimentados al momento de hacer pruebas",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Un defecto es:",
+      "opciones": [
+        {
+          "texto": "Una desviación entre el comportamiento esperado y el real",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una condición temprana que desencadena un error",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La causa de un fallo o una desviación",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Una equivocación cometida por un ingeniero de software",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Un fallo es:",
+      "opciones": [
+        {
+          "texto": "Una desviación entre el comportamiento esperado y el real",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Una condición temprana que desencadena un error",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La causa de un fallo o una desviación",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una equivocación cometida por un ingeniero de software",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Una causa raíz es:",
+      "opciones": [
+        {
+          "texto": "Una desviación entre el comportamiento esperado y el real",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una condición temprana que desencadena un error",
+          "esCorrecta": true
+        },
+        {
+          "texto": "La causa de un fallo o una desviación",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Una equivocación cometida por un ingeniero de software",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Es un beneficio de la Independencia de Pruebas:",
+      "opciones": [
+        {
+          "texto": "No hay Beneficios",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Probadores independientes reconocen diferentes tipos de fallas debido a diferentes perspectivas",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Las pruebas se aislan del desarrollo",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Los desarrolladores pierden el sentido de la responsabilidad",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Es una desventaja de la Independencia de Pruebas:",
+      "opciones": [
+        {
+          "texto": "No hay Beneficios",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Probadores independientes reconocen diferentes tipos de fallas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas se aislan del desarrollo",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Un probador independiente puede desafiar las suposiciones",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "El rol de gestión de pruebas:",
+      "opciones": [
+        {
+          "texto": "Asume la responsabilidad general del proceso, el equipo y el liderazgo de las actividades",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Asume la responsabilidad general del aspecto de ingeniería (técnico)",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Es un enfoque de equipo completo",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Es un enfoque de prueba independiente",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "El rol de pruebas:",
+      "opciones": [
+        {
+          "texto": "Asume la responsabilidad general del proceso, el equipo y el liderazgo",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Asume la responsabilidad general del aspecto de ingeniería (técnico) de las pruebas",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Es un enfoque de equipo completo",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Es un enfoque de prueba independiente",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "No corresponde a una característica de la trazabilidad:",
+      "opciones": [
+        {
+          "texto": "Analizar el impacto de cambios",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Medir la cobertura",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Hacer que la prueba pueda ser auditada",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Productos de trabajo desvinculados y trabajados por separado",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuáles son algunas habilidades esenciales que los buenos probadores deberían poseer?",
+      "opciones": [
+        {
+          "texto": "Experiencia en gestión de proyectos",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ser meticulosos, curiosos y prestar atención a los detalles",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Dominar varios lenguajes de programación",
+          "esCorrecta": false
+        },
+        {
+          "texto": "No es necesaria ninguna habilidad",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Qué enfoque promueve la colaboración y la responsabilidad compartida dentro de un equipo?",
+      "opciones": [
+        {
+          "texto": "El enfoque de prueba independiente",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La certificación ISTQB Foundation",
+          "esCorrecta": false
+        },
+        {
+          "texto": "El enfoque de equipo completo",
+          "esCorrecta": true
+        },
+        {
+          "texto": "El enfoque Kanban",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Por qué es importante que los probadores colaboren estrechamente con otros miembros del equipo?",
+      "opciones": [
+        {
+          "texto": "Para aumentar generar debates en el equipo",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Para transferir conocimientos sobre pruebas a otros miembros del equipo",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Para minimizar la comunicación con los desarrolladores",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Para limitar la influencia de los representantes comerciales en las pruebas",
+          "esCorrecta": false
+        }
+      ]
+    }
+  ]
+}

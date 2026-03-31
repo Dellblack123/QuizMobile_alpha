@@ -1,0 +1,48 @@
+{
+  "titulo": "p1",
+  "tiempo": 1,
+  "preguntas": [
+    {
+      "texto": "Seleccione la mejor definición de una causa raiz:",
+      "opciones": [
+        {
+          "texto": "Requiere la ejecución del Software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Componente o Sistema sometido a pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Condiciones tempranas que contribuyen a la creación de defectos",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Ganar la confianza en el nivel de calidad",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Es un producto de trabajo de las pruebas:",
+      "opciones": [
+        {
+          "texto": "Plan de Pruebas",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Componente o Sistema sometido a pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Requerimientos, diagramas, diseño, historias de usuario",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ganar la confianza en el nivel de calidad",
+          "esCorrecta": false
+        }
+      ]
+    }
+  ]
+}

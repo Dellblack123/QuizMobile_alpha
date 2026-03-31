@@ -1,0 +1,426 @@
+{
+  "titulo": "CAP_III",
+  "tiempo": 30,
+  "preguntas": [
+    {
+      "texto": "¿Cuál de las siguientes alternativas describe MEJOR la diferencia entre una Inspección y una Revisión Guiada?",
+      "opciones": [
+        {
+          "texto": "Tanto las Inspecciones y como la Revisión Guiada son dirigidas por el autor",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La Inspección está dirigida por un moderador y un Revisión Guiada está dirigido por el autor",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Tanto las Inspecciones y la Revisión Guiada son dirigidas por un moderador",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La Revisión Guiada es dirigida por el autor. El autor no está presente durante las inspecciones",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes alternativas es correcta con respecto a las inspecciones?",
+      "opciones": [
+        {
+          "texto": "Las inspecciones no necesitan un rol especial de moderador",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las inspecciones se usan para auditar el proceso de las revisiones",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las inspecciones son el tipo más riguroso de todas las revisiones",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Las inspecciones encuentran fallos en lugar de defectos",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "En lo referente a las técnicas estáticas, indique la alternativa incorrecta:",
+      "opciones": [
+        {
+          "texto": "El objetivo de las técnicas estáticas y el de las pruebas dinámicas es identificar defectos, pero difieren en los tipos de defectos y fallos que encuentran",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Si sólo realizamos pruebas dinámicas, es posible que detectemos muy tarde o no detectemos omisiones o defectos en los requisitos",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La realización de revisiones repercutirá positivamente en la reducción de los tiempos de desarrollo y pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Sólo es posible realizar pruebas estáticas sobre los documentos",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes es una prueba estática?",
+      "opciones": [
+        {
+          "texto": "Inspección",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Partición de Equivalencia",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Prueba de Sentencias",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Prueba de Casos de Uso",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Por qué las pruebas estáticas y las pruebas dinámicas son complementarias?",
+      "opciones": [
+        {
+          "texto": "Porque comparten el objetivo de identificar defectos y encontrar el MISMO tipo de defectos",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Porque tienen diferentes objetivos y difieren en los tipos de defectos que encuentran",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Porque tienen diferentes objetivos y encuentran los MISMOS tipos de defectos",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Porque comparten el objetivo de identificar defectos pero difieren en los tipos de defectos que encuentran",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es el principal objetivo en la revisión de un entregable de software?",
+      "opciones": [
+        {
+          "texto": "Identificar las fallas del software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Identificar defectos en cualquier producto de software",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Identificar los errores de ortografía en los requisitos",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Identificar incoherencias en los estándares de programación",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Se caracterizan por la presencia de un experto y el objetivo principal es encontrar defectos, y comprobar la conformidad sobre algún aspecto técnico:",
+      "opciones": [
+        {
+          "texto": "Revisión Guiada",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Revisión Técnica",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Revisión de Pares",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Inspección",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es la secuencia de una revisión formal?",
+      "opciones": [
+        {
+          "texto": "Planificación, Iniciar Revisión, Revisión Individual, Comunicar y Analizar Cuestiones, Corregir e Informar",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Iniciar Revisión, Planificación, Revisión Individual, Comunicar y Analizar Cuestiones, Corregir e Informar",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Planificación, Revisión Individual, Iniciar Revisión, Corregir e Informar, Comunicar y Analizar Cuestiones",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Comunicar y Analizar Cuestiones, Planificación, Revisión Individual, Iniciar Revisión, Corregir e Informar",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "En una revisión formal, ¿Cuál es el nombre del rol del participante que crea el producto de trabajo bajo revisión?",
+      "opciones": [
+        {
+          "texto": "Facilitador",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Programador",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Autor",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Jefe de proyecto",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "En una revisión formal, ¿Cuál es el nombre del rol del participante cuya función es identificar posibles defectos en el producto de trabajo bajo revisión?",
+      "opciones": [
+        {
+          "texto": "Facilitador",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Programador",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Autor",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Revisor",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "En una revisión formal, ¿Cuál es el nombre del rol del participante cuya función es asegurar el funcionamiento efectivo de la reunión de revisión?",
+      "opciones": [
+        {
+          "texto": "Gerente",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Moderador",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Autor",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Revisor",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "Se encuentra en una reunión leyendo una historia de usuario para prepararse para una reunión con el product owner y un desarrollador, observando los posibles defectos. ¿Cuál afirmación es verdadera sobre esta actividad?",
+      "opciones": [
+        {
+          "texto": "No es una prueba estática, porque las pruebas estáticas implican la ejecución del objeto de prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "No es una prueba estática, porque las pruebas estáticas se realizan con una herramienta",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Es una prueba estática, porque los defectos podrían ser encontrados de forma más barata",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Es una prueba estática, porque la prueba estática no implica la ejecución del objeto de prueba",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es una diferencia clave entre las pruebas estáticas y las pruebas dinámicas?",
+      "opciones": [
+        {
+          "texto": "Las pruebas estáticas no requieren la ejecución del software, mientras que las pruebas dinámicas sí",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Las pruebas estáticas no sirven para identificar defectos, mientras que las pruebas dinámicas los encuentran directamente",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las pruebas estáticas son más efectivas para encontrar defectos en la ejecución del software que las pruebas dinámicas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La prueba estática implica la ejecución del objeto de prueba y la prueba dinámica no",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Qué tipo de defectos pueden ser detectados más eficientemente mediante análisis estático que mediante pruebas dinámicas?",
+      "opciones": [
+        {
+          "texto": "Defectos de rendimiento",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Defectos en el código",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Defectos en las Historias de Usuario",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Defectos en los requisitos",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Qué actividad del proceso de revisión implica identificar el alcance de la revisión, los criterios de salida y la información de apoyo?",
+      "opciones": [
+        {
+          "texto": "Iniciar la revisión",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Planificación de la revisión",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Revisión individual",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Comunicación y análisis",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Quién toma la responsabilidad general de una revisión y decide quién estará involucrado?",
+      "opciones": [
+        {
+          "texto": "Probador",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Moderador",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Líder de la revisión",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Autor",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es uno de los factores que determinan el éxito de las revisiones?",
+      "opciones": [
+        {
+          "texto": "La cantidad de defectos encontrados durante la revisión",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La cantidad de fallos identificados durante la revisión",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La claridad de los objetivos y criterios de salida de la revisión",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Los probadores certificados en ISTQB Foundation Level",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es uno de los beneficios de recibir comentarios frecuentes de los interesados durante el ciclo de vida del desarrollo de software?",
+      "opciones": [
+        {
+          "texto": "Aumento de la carga de trabajo para el equipo de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Siempre cumplir con los plazos del proyecto",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Prevención de malentendidos sobre los requisitos",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Aumento de la carga de trabajo para el equipo de desarrollo",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál es uno de los objetivos de una reunión de revisión?",
+      "opciones": [
+        {
+          "texto": "Crear un ambiente competitivo entre los revisores",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Tomar decisiones técnicas sobre problemas identificados",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Evitar la participación de los autores en la revisión",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Limitar la cantidad de anomalías identificadas durante la revisión",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Qué factor contribuye a la efectividad de una revisión?",
+      "opciones": [
+        {
+          "texto": "El tamaño de los productos de trabajo, que deben ser lo más grandes posible",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La formalidad del proceso de revisión, que debe seguir un enfoque estricto",
+          "esCorrecta": false
+        },
+        {
+          "texto": "La retroalimentación proporcionada a los interesados y autores para mejorar el producto y sus actividades",
+          "esCorrecta": true
+        },
+        {
+          "texto": "La limitación de la participación de los interesados en la revisión",
+          "esCorrecta": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "titulo": "CAP_VI",
+  "tiempo": 30,
+  "preguntas": [
+    {
+      "texto": "¿Cuál de las siguientes afirmaciones NO es correcta?",
+      "opciones": [
+        {
+          "texto": "Las herramientas de prueba dan soporte al proceso de pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las herramientas de prueba pueden ser usadas por desarrolladores como por probadores",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las herramientas de pruebas se utilizan para la automatizar la ejecución de las pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las herramientas de pruebas ayudan a los desarrolladores a realizar pruebas por lo que el equipo de pruebas es redundante",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuáles de las siguientes actividades de pruebas NO pueden ser automatizadas?",
+      "opciones": [
+        {
+          "texto": "Inspecciones y Revisiones",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Obtención de Métricas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ejecución de Pruebas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Generación de datos",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "NO es un objetivo de las Herramientas de Pruebas:",
+      "opciones": [
+        {
+          "texto": "Mejorar la eficiencia de las actividades de prueba, automatizando tareas repetitivas",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Automatizar actividades que requieren muchos recursos",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Aumentar la fiabilidad de las pruebas (comparaciones de datos)",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Las expectativas con respecto a la herramienta pueden ser poco realistas",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes afirmaciones describe mejor un riesgo potencial de la automatización de pruebas?",
+      "opciones": [
+        {
+          "texto": "Expectativas poco realistas sobre los beneficios de la herramienta",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Reducción de la carga de trabajo de los probadores",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Mejora de la calidad del software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Aumento de la cobertura de las pruebas",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes opciones describe mejor una función de las herramientas de gestión de pruebas?",
+      "opciones": [
+        {
+          "texto": "Facilitar la generación de casos de prueba y datos de prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Apoyar en la realización de análisis estático",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ayudar en el seguimiento y control del proceso de pruebas de software",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Permitir la ejecución automatizada de pruebas funcionales",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes opciones describe mejor una función de las herramientas de ejecución de pruebas?",
+      "opciones": [
+        {
+          "texto": "Facilitar la generación de casos de prueba y datos de prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Apoyar en la realización de análisis estático",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ayudar en el seguimiento y control del proceso de pruebas de software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Permitir la ejecución automatizada de pruebas funcionales",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes opciones describe mejor una función de las herramientas de pruebas de rendimiento?",
+      "opciones": [
+        {
+          "texto": "Facilitar la generación de casos de prueba y datos de prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Apoyar en la realización de análisis estático",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ayudar en el seguimiento y control del proceso de pruebas de software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Permitir la ejecución automatizada de pruebas no funcionales",
+          "esCorrecta": true
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes opciones describe mejor una función de las herramientas de pruebas estáticas?",
+      "opciones": [
+        {
+          "texto": "Facilitar la generación de casos de prueba y datos de prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Apoyar en la realización de análisis estático",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Ayudar en el seguimiento y control del proceso de pruebas de software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Permitir la ejecución automatizada de pruebas funcionales",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes opciones describe mejor una función de las herramientas de diseño e implementación de pruebas?",
+      "opciones": [
+        {
+          "texto": "Facilitar la generación de casos de prueba, procedimientos de prueba y datos de prueba",
+          "esCorrecta": true
+        },
+        {
+          "texto": "Apoyar en la realización de análisis estático",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ayudar en el seguimiento y control del proceso de pruebas de software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Apoyar el flujo de entrega de DevOps, el seguimiento de flujos de trabajo, el proceso de construcción automatizado, CI/CD",
+          "esCorrecta": false
+        }
+      ]
+    },
+    {
+      "texto": "¿Cuál de las siguientes opciones describe mejor una función de las herramientas DevOps?",
+      "opciones": [
+        {
+          "texto": "Facilitar la generación de casos de prueba, procedimientos de prueba y datos de prueba",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Apoyar en la realización de análisis estático",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Ayudar en el seguimiento y control del proceso de pruebas de software",
+          "esCorrecta": false
+        },
+        {
+          "texto": "Apoyar el flujo de entrega de DevOps, el seguimiento de flujos de trabajo, el proceso de construcción automatizado, CI/CD",
+          "esCorrecta": true
+        }
+      ]
+    }
+  ]
+}
