@@ -10,6 +10,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.Locale
@@ -27,13 +28,13 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val gson = Gson()
 
     private val _quizState = MutableStateFlow<QuizState>(QuizState.Empty)
-    val quizState: StateFlow<QuizState> = _quizState
+    val quizState: StateFlow<QuizState> = _quizState.asStateFlow()
 
     private val _listaNombres = MutableStateFlow<List<String>>(emptyList())
-    val listaNombres: StateFlow<List<String>> = _listaNombres
+    val listaNombres: StateFlow<List<String>> = _listaNombres.asStateFlow()
 
-    private val _tiempoRestante = MutableStateFlow("--:--")
-    val tiempoRestante: StateFlow<String> = _tiempoRestante
+    private val _tiempoRestante = MutableStateFlow("00:00")
+    val tiempoRestante: StateFlow<String> = _tiempoRestante.asStateFlow()
 
     private var timerJob: Job? = null
 
@@ -47,12 +48,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                 val files = context.assets.list("")?.filter { it.endsWith(".json") } ?: emptyList()
                 _listaNombres.value = files
             } catch (e: Exception) {
-                _quizState.value = QuizState.Error("Error al listar archivos")
+                _quizState.value = QuizState.Error("Error al listar archivos: ${e.message}")
             }
         }
     }
 
-    fun iniciarTimer(minutos: Int) {
+    private fun iniciarTimer(minutos: Int) {
         timerJob?.cancel()
         timerJob = viewModelScope.launch {
             var segundosTotales = minutos * 60
@@ -60,25 +61,11 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                 val mins = segundosTotales / 60
                 val segs = segundosTotales % 60
                 _tiempoRestante.value = String.format(Locale.getDefault(), "%02d:%02d", mins, segs)
+
+                if (segundosTotales == 0) break
+
                 delay(1000)
                 segundosTotales--
-            }
-        }
-    }
-
-    private fun cargarListaDeAssets() {
-        viewModelScope.launch {
-            try {
-                val files = context.assets.list("")?.filter { it.endsWith(".json") } ?: emptyList()
-                _listaNombres.value = files
-
-                if (files.isNotEmpty()) {
-                    loadQuizFromAsset(files[0])
-                } else {
-                    _quizState.value = QuizState.Error("No se encontraron archivos JSON")
-                }
-            } catch (e: Exception) {
-                _quizState.value = QuizState.Error("Error al acceder a assets")
             }
         }
     }
@@ -87,7 +74,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             _quizState.value = QuizState.Loading
             timerJob?.cancel()
-            _tiempoRestante.value = "--:--"
+            _tiempoRestante.value = "00:00"
 
             try {
                 val quiz = withContext(Dispatchers.IO) {
@@ -102,8 +89,14 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                     _quizState.value = QuizState.Error("Formato de JSON inválido")
                 }
             } catch (e: Exception) {
-                _quizState.value = QuizState.Error("Error: ${e.message}")
+                _quizState.value = QuizState.Error("Error al cargar: ${e.message}")
             }
         }
+    }
+
+    fun resetQuizState() {
+        timerJob?.cancel()
+        _tiempoRestante.value = "00:00"
+        _quizState.value = QuizState.Empty
     }
 }

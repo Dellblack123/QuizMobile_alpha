@@ -39,9 +39,12 @@ class MainActivity : ComponentActivity() {
 
                     when (val state = quizState) {
                         is QuizState.Empty -> {
-                            PantallaBienvenida(listaCuestionarios) {nombre ->
-                                viewModel.loadQuizFromAsset(nombre)
-                            }
+                            PantallaBienvenida(
+                                listaDeNombres = listaCuestionarios,
+                                onQuizSelected = { nombre ->
+                                    viewModel.loadQuizFromAsset(nombre)
+                                }
+                            )
                         }
 
                         is QuizState.Loading -> {
@@ -49,20 +52,23 @@ class MainActivity : ComponentActivity() {
                                 CircularProgressIndicator()
                             }
                         }
+
                         is QuizState.Success -> {
                             QuizScreen(
                                 quiz = state.quiz,
-                                listaDeNombres = listaCuestionarios,
                                 tiempoRestante = tiempo,
-                                onQuizSelected = { nombre ->
-                                    viewModel.loadQuizFromAsset(nombre)
-                                },
-                                onConfirmStart = {}
+                                onBackToDashboard = {
+                                    viewModel.resetQuizState()
+                                }
                             )
                         }
+
                         is QuizState.Error -> {
                             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                                Text(text = "Error: ${state.message}", color = MaterialTheme.colorScheme.error)
+                                Text(
+                                    text = "Error: ${state.message}",
+                                    color = MaterialTheme.colorScheme.error
+                                )
                             }
                         }
                     }
