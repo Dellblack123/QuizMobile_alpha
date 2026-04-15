@@ -38,6 +38,42 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     private var timerJob: Job? = null
 
+    private val _isShuffleEnabled = MutableStateFlow(false)
+    val isShuffleEnabled: StateFlow<Boolean> = _isShuffleEnabled.asStateFlow()
+
+    fun toggleShuffle() {
+        _isShuffleEnabled.value = !_isShuffleEnabled.value
+    }
+
+    fun loadQuizFromAsset(fileName: String) {
+        viewModelScope.launch {
+            _quizState.value = QuizState.Loading
+            timerJob?.cancel()
+            _tiempoRestante.value = "00:00"
+
+            try {
+                val quiz = withContext(Dispatchers.IO) {
+                    val jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
+                    gson.fromJson(jsonString, Quiz::class.java)
+                }
+
+                if (quiz != null) {
+                    // LÓGICA DE ALEATORIEDAD
+                    val quizFinal = if (_isShuffleEnabled.value) {
+                        quiz.copy(preguntas = quiz.preguntas.shuffled())
+                    } else {
+                        quiz
+                    }
+
+                    _quizState.value = QuizState.Success(quizFinal)
+                    iniciarTimer(quizFinal.tiempo)
+                }
+            } catch (e: Exception) {
+                _quizState.value = QuizState.Error("Error: ${e.message}")
+            }
+        }
+    }
+
     init {
         cargarListaDeAssetsSoloNombres()
     }
@@ -66,30 +102,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
                 delay(1000)
                 segundosTotales--
-            }
-        }
-    }
-
-    fun loadQuizFromAsset(fileName: String) {
-        viewModelScope.launch {
-            _quizState.value = QuizState.Loading
-            timerJob?.cancel()
-            _tiempoRestante.value = "00:00"
-
-            try {
-                val quiz = withContext(Dispatchers.IO) {
-                    val jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
-                    gson.fromJson(jsonString, Quiz::class.java)
-                }
-
-                if (quiz != null) {
-                    _quizState.value = QuizState.Success(quiz)
-                    iniciarTimer(quiz.tiempo)
-                } else {
-                    _quizState.value = QuizState.Error("Formato de JSON inválido")
-                }
-            } catch (e: Exception) {
-                _quizState.value = QuizState.Error("Error al cargar: ${e.message}")
             }
         }
     }

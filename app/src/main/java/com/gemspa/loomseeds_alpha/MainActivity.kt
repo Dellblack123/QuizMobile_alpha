@@ -39,7 +39,9 @@ class MainActivity : ComponentActivity() {
 
                     when (val state = quizState) {
                         is QuizState.Empty -> {
+                            // Se añade el parámetro viewModel para gestionar el Shuffle
                             PantallaBienvenida(
+                                viewModel = viewModel,
                                 listaDeNombres = listaCuestionarios,
                                 onQuizSelected = { nombre ->
                                     viewModel.loadQuizFromAsset(nombre)

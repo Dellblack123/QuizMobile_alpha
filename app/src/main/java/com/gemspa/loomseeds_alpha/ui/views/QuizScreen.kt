@@ -34,6 +34,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.text.style.TextOverflow
+import com.gemspa.loomseeds_alpha.viewmodel.QuizViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -135,7 +136,7 @@ fun QuizScreen(
                         modifier = Modifier.fillMaxWidth().padding(20.dp).height(56.dp),
                         colors = ButtonDefaults.buttonColors(containerColor = azulPrimario),
                         shape = RoundedCornerShape(16.dp)
-                    ) { Text("VOLVER AL DASHBOARD", fontWeight = FontWeight.Bold) }
+                    ) { Text("VOLVER AL DASHBOARD", fontWeight = FontWeight.Bold, color = Color.White) }
                 } else {
                     Button(
                         onClick = {
@@ -329,6 +330,7 @@ fun LeyendaItem(color: Color, texto: String) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PantallaBienvenida(
+    viewModel: QuizViewModel, // Agregado para controlar el Shuffle
     listaDeNombres: List<String>,
     onQuizSelected: (String) -> Unit
 ) {
@@ -336,17 +338,40 @@ fun PantallaBienvenida(
     val naranjaAccent = Color(0xFFFF9800)
     val backgroundGradient = Brush.verticalGradient(colors = listOf(Color(0xFFE3F2FD), Color.White))
 
-    Scaffold(containerColor = Color.Transparent, modifier = Modifier.background(backgroundGradient)) { padding ->
+    // Recolectamos el estado del Shuffle desde el ViewModel
+    val isShuffleEnabled by viewModel.isShuffleEnabled.collectAsState()
+
+    Scaffold(
+        containerColor = Color.Transparent,
+        modifier = Modifier.background(backgroundGradient)
+    ) { padding ->
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
-            modifier = Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp),
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+                .padding(horizontal = 16.dp),
             horizontalArrangement = Arrangement.spacedBy(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
+            // --- HEADER ---
             item(span = { GridItemSpan(2) }) {
-                Row(modifier = Modifier.fillMaxWidth().padding(top = 20.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 20.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
-                        Box(modifier = Modifier.size(50.dp).clip(CircleShape).background(Color.White).border(1.dp, Color(0xFFBBDEFB), CircleShape), contentAlignment = Alignment.Center) {
+                        Box(
+                            modifier = Modifier
+                                .size(50.dp)
+                                .clip(CircleShape)
+                                .background(Color.White)
+                                .border(1.dp, Color(0xFFBBDEFB), CircleShape),
+                            contentAlignment = Alignment.Center
+                        ) {
                             Icon(Icons.Default.Person, contentDescription = null, tint = azulPrimario)
                         }
                         Spacer(modifier = Modifier.width(10.dp))
@@ -355,21 +380,65 @@ fun PantallaBienvenida(
                             Text("@BioCode.Builder", style = MaterialTheme.typography.labelSmall, color = Color(0xFF1976D2))
                         }
                     }
-                    Surface(shape = RoundedCornerShape(20.dp), color = naranjaAccent) {
-                        Text("1200 PTS", modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp), color = Color.White, fontWeight = FontWeight.Bold, fontSize = 12.sp)
-                    }
+
+                    // SUSTITUCIÓN DE 1200 PTS POR EL BOTÓN MODO AZAR
+                    FilterChip(
+                        selected = isShuffleEnabled,
+                        onClick = { viewModel.toggleShuffle() },
+                        label = {
+                            Text(
+                                text = if (isShuffleEnabled) "MODO AZAR" else "ORDEN FIJO",
+                                fontSize = 10.sp,
+                                fontWeight = FontWeight.Bold
+                            )
+                        },
+                        leadingIcon = if (isShuffleEnabled) {
+                            { Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(14.dp)) }
+                        } else null,
+                        shape = RoundedCornerShape(20.dp),
+                        colors = FilterChipDefaults.filterChipColors(
+                            selectedContainerColor = naranjaAccent,
+                            selectedLabelColor = Color.White,
+                            selectedLeadingIconColor = Color.White,
+                            containerColor = Color.White.copy(alpha = 0.5f),
+                            labelColor = azulPrimario
+                        ),
+                        border = FilterChipDefaults.filterChipBorder(
+                            enabled = true,
+                            selected = isShuffleEnabled,
+                            borderColor = azulPrimario.copy(alpha = 0.3f),
+                            selectedBorderColor = naranjaAccent
+                        )
+                    )
                 }
             }
 
+            // --- CATEGORÍAS ---
             item(span = { GridItemSpan(2) }) {
                 Column {
                     Text("Categorías", fontWeight = FontWeight.Bold, color = azulPrimario)
-                    LazyRow(modifier = Modifier.padding(top = 10.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    LazyRow(
+                        modifier = Modifier.padding(top = 10.dp),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
                         val categorias = listOf("Java", "Kotlin", "Spring", "Docker")
                         items(categorias) { cat ->
-                            Surface(modifier = Modifier.size(60.dp), shape = RoundedCornerShape(15.dp), color = Color.White, shadowElevation = 2.dp) {
+                            Surface(
+                                modifier = Modifier.size(60.dp),
+                                shape = RoundedCornerShape(15.dp),
+                                color = Color.White,
+                                shadowElevation = 2.dp
+                            ) {
                                 Box(contentAlignment = Alignment.Center) {
-                                    Text(when(cat) { "Java" -> "☕"; "Kotlin" -> "📱"; "Spring" -> "🍃"; else -> "⚙️" }, fontSize = 22.sp)
+                                    Text(
+                                        text = when(cat) {
+                                            "Java" -> "☕"
+                                            "Kotlin" -> "📱"
+                                            "Spring" -> "🍃"
+                                            else -> "⚙️"
+                                        },
+                                        fontSize = 22.sp
+                                    )
                                 }
                             }
                         }
@@ -377,31 +446,73 @@ fun PantallaBienvenida(
                 }
             }
 
-            item(span = { GridItemSpan(2) }) { Text("Retos Disponibles", fontWeight = FontWeight.Bold, color = azulPrimario) }
+            // --- TÍTULO SECCIÓN ---
+            item(span = { GridItemSpan(2) }) {
+                Text("Retos Disponibles", fontWeight = FontWeight.Bold, color = azulPrimario)
+            }
 
+            // --- LISTADO DE CUESTIONARIOS ---
             items(listaDeNombres) { nombreArchivo ->
                 val tituloLimpio = nombreArchivo.replace(".json", "").replace("_", " ").uppercase()
                 Card(
-                    modifier = Modifier.fillMaxWidth().clickable { onQuizSelected(nombreArchivo) },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable { onQuizSelected(nombreArchivo) },
                     shape = RoundedCornerShape(20.dp),
                     colors = CardDefaults.cardColors(containerColor = Color.White),
                     elevation = CardDefaults.cardElevation(defaultElevation = 3.dp)
                 ) {
-                    Column(modifier = Modifier.padding(12.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                        Surface(modifier = Modifier.size(80.dp).padding(8.dp), shape = RoundedCornerShape(12.dp), color = Color(0xFFF1F8FE)) {
-                            Icon(Icons.Default.Search, contentDescription = null, tint = azulPrimario, modifier = Modifier.padding(12.dp))
+                    Column(
+                        modifier = Modifier.padding(12.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Surface(
+                            modifier = Modifier.size(80.dp).padding(8.dp),
+                            shape = RoundedCornerShape(12.dp),
+                            color = Color(0xFFF1F8FE)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.Search,
+                                contentDescription = null,
+                                tint = azulPrimario,
+                                modifier = Modifier.padding(12.dp)
+                            )
                         }
                         Spacer(modifier = Modifier.height(8.dp))
-                        Text(text = tituloLimpio, style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold, color = azulPrimario, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                        Text(text = "15 Questions", style = MaterialTheme.typography.labelSmall, color = Color.Gray)
+                        Text(
+                            text = tituloLimpio,
+                            style = MaterialTheme.typography.labelLarge,
+                            fontWeight = FontWeight.Bold,
+                            color = azulPrimario,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                        Text(
+                            text = "Evaluación",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = Color.Gray
+                        )
                         Spacer(modifier = Modifier.height(12.dp))
-                        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 Icon(Icons.Default.Star, contentDescription = null, tint = naranjaAccent, modifier = Modifier.size(14.dp))
                                 Text(" 24K", fontSize = 10.sp, fontWeight = FontWeight.Bold)
                             }
-                            Surface(modifier = Modifier.size(32.dp), shape = CircleShape, color = naranjaAccent) {
-                                Icon(Icons.Default.PlayArrow, contentDescription = null, tint = Color.White, modifier = Modifier.padding(6.dp))
+                            Surface(
+                                modifier = Modifier.size(32.dp),
+                                shape = CircleShape,
+                                color = naranjaAccent
+                            ) {
+                                Icon(
+                                    Icons.Default.PlayArrow,
+                                    contentDescription = null,
+                                    tint = Color.White,
+                                    modifier = Modifier.padding(6.dp)
+                                )
                             }
                         }
                     }
